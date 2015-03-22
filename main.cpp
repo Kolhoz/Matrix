@@ -6,31 +6,30 @@ using namespace std;
 
 int main()
 {
-    int N, value;
-    cout << "Enter matrix dimension: ";
-    cin >> N;
+    int cols = 0;
+    int rows = 0;
+    double value;
 
-    Matrix myMatrix(N,N);
-    cout << "Matrix initialization..." << endl;
-    for (int i = 0; i < N; ++i)
-    {
-        for (int j = 0; j < N; ++j)
+    cout << "Enter cols amount: "; cin >> cols;
+    cout << endl;
+    cout << "Enter rows amount: "; cin >> rows;
+    cout << endl;
+    Matrix myMatrix1(cols, rows);
+
+    cout << "Initialize matrix..." << endl;
+
+    for (int i = 0; i < cols; i++)
+        for (int j = 0; j < rows; j++)
         {
             cin >> value;
-            myMatrix.Set(i,j, value);
+            myMatrix1.Set(i, j, value);
         }
-    }
 
-    cout << "Resulting Matrix..." << endl;
-
-    for (int i = 0; i < N; ++i)
-    {
-        for (int j = 0; j < N; ++j)
-        {
-            cout << myMatrix.Get(i,j) << "\t";
-        }
-        cout << endl;
-    }
-cout << "Determinant is " << myMatrix.Determinant();
+   myMatrix1.ShowMatrix();
+   myMatrix1.GetCol(5);
+   myMatrix1.GetRow(5);
     return 0;
 }
+
+
+

@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1425851776 source:d:\less\matrixcpp\matrix.cpp
+1427032892 source:d:\less\matrixcpp\matrix.cpp
 	<iostream>
 	"matrix.h"
 	<cmath>
 
-1425912695 d:\less\matrixcpp\matrix.h
+1427031485 d:\less\matrixcpp\matrix.h
 
-1425850295 source:d:\less\matrixcpp\main.cpp
+1427032588 source:d:\less\matrixcpp\main.cpp
 	<iostream>
 	"matrix.h"
 
